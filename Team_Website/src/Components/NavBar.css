@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  max-height: fit-content;
+}
+
+.navbar img {
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 3px;
+}
+
+.hero {
+  background: url("");
+}
