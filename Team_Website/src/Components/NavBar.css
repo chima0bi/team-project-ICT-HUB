@@ -2,14 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blue;
+  background-color: rgb(4, 4, 78);
   max-height: fit-content;
 }
 
 .navbar img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   margin-left: 20px;
+}
+
+.logo {
+  border-radius: 1vh;
 }
 
 .navbar ul {
@@ -27,6 +31,16 @@
   padding: 3px;
 }
 
-.hero {
-  background: url("");
+.navbar a:hover {
+  text-decoration: underline;
+  transform: translate(10px, 10px);
+}
+
+.navbar a:active {
+  background-color: cornflowerblue;
+}
+
+#search-bar {
+  height: 20px;
+  border-radius: 15vh;
 }
