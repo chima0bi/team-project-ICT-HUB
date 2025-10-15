@@ -1,7 +1,7 @@
 // import React from 'react'
 import "./NavBar.css";
 import logo from "../assets/img/wayne-logo2.png";
-import {Link} from "react-router-dom"
+import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -10,18 +10,27 @@ const NavBar = () => {
         <img src={logo} className="logo" />
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li>
+              <NavLink to="/" className={({isActive}) => (isActive? "active-link" : "")}>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className={({isActive}) => (isActive? "active-link" : "")}>About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services" className={({isActive}) => (isActive? "active-link" : "")}>Services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className={({isActive}) => (isActive? "active-link" : "")}>Contact Us</NavLink>
+            </li>
           </ul>
         </nav>
         <form action="serch.php" id="search-bar">
           <input type="text" placeholder="serach..." />
         </form>
       </div>
+      <div className="offset-navbar"></div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

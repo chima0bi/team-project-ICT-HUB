@@ -38,11 +38,19 @@
   transform: translate(10px, 10px);
 }
 
-.navbar a:active {
+/* .navbar a:active {
   background-color: cornflowerblue;
-}
+} */
 
 #search-bar {
   height: 20px;
   border-radius: 15vh;
+}
+
+.active-link {
+  background-color: cornflowerblue;
+}
+
+.offset-navbar {
+  padding-top: 50px;
 }
