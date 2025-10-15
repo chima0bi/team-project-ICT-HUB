@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <section className="home-body">
         <div id="news-and-events">
-          <marquee className="section-title">News and Events</marquee>
+          <h3 className="section-title">News and Events</h3>
           <div className="news-cards">
             <div className="newscard"></div>
             <div className="newscard"></div>

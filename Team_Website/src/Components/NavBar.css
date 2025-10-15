@@ -4,6 +4,8 @@
   align-items: center;
   background-color: rgb(4, 4, 78);
   max-height: fit-content;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar img {
